@@ -25,7 +25,6 @@ def get_message():
     bot.process_new_updates([update])
     return '!', 200
 
-
 @server.route('/')
 def webhook():
     bot.remove_webhook()
